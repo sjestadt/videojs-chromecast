@@ -1,0 +1,32 @@
+<!doctype html>
+<html data-cast-api-enabled="true">
+<head>
+  <meta charset="utf-8">
+  <title>videojs-chromecast Demo</title>
+  <link href="/node_modules/video.js/dist/video-js.css" rel="stylesheet">
+  <link href="/dist/videojs-chromecast.css" rel="stylesheet">
+</head>
+<body>
+  <video id="videojs-chromecast-player" class="video-js vjs-default-skin" controls>
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+    <source src="//vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+    <track kind="subtitles" src="/test/subtitle.vtt" srclang="en" label="English">
+  </video>
+  <ul>
+    <li><a href="/test/">Run unit tests in browser.</a></li>
+    
+  </ul>
+  <script src="/node_modules/video.js/dist/video.js"></script>
+  <script src="/dist/videojs-chromecast.js"></script>
+  <script src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+  <script>
+    (function(window, videojs) {
+      var player = window.player = videojs('videojs-chromecast-player',
+          {'html5': { nativeTextTracks: false }});
+      player.ready(function () { 
+        this.chromecast();
+      });
+    }(window, window.videojs));
+  </script>
+</body>
+</html>
