@@ -1,0 +1,28 @@
+{
+  "name": "videojs-chromecast",
+  "description": "Add chromecast support into videojs",
+  "main": [
+    "dist/videojs-chromecast.min.js",
+    "dist/videojs-chromecast.js",
+    "dist/videojs-chromecast.css"
+  ],
+  "authors": [
+    "Rick Sanchez <ricksancho@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "videojs",
+    "videojs-plugin"
+  ],
+  "homepage": "https://github.com/ricksancho/videojs-chromecast",
+  "moduleType": [
+    "es6"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
