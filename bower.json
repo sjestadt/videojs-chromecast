@@ -1,5 +1,6 @@
 {
   "name": "videojs-chromecast",
+  "version": "0.0.1",
   "description": "Add chromecast support into videojs",
   "main": [
     "dist/videojs-chromecast.js",
