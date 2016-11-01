@@ -2,7 +2,6 @@
   "name": "videojs-chromecast",
   "description": "Add chromecast support into videojs",
   "main": [
-    "dist/videojs-chromecast.min.js",
     "dist/videojs-chromecast.js",
     "dist/videojs-chromecast.css"
   ],
