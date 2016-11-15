@@ -221,11 +221,12 @@ class ChromecastPlayer extends Component {
     // Save current status
     let src = this.player_.currentSrc();
     let currentTime = this.player_.currentTime();
+    let type = this.player_.currentType();
     let paused = this.player_.paused();
 
     // Restore old status/settings
     this.player_.loadTech_('Html5');
-    this.player_.src({ src });
+    this.player_.src({ src: src, type: type});
 
     if (!paused) {
       this.player_.one('seeked', function() {
